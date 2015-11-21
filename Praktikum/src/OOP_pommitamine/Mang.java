@@ -11,6 +11,7 @@ public class Mang {
 
         //2. Mängu töös hoidmine
         while (meri.laevuOnAlles()){
+            meri.kuvaLaud();
             int[] lask = mangija.kuhuLasta();
             boolean pihtas = meri.saiPihta(lask);
             if (pihtas){
@@ -21,6 +22,6 @@ public class Mang {
         }
 
         // 3. Mis saab kui mäng on läbi?
-        mangija.gameover();
+//        mangija.gameover();
     }
 }
